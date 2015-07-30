@@ -1,0 +1,18 @@
+Roboland is starting a production factory, we need robots to execute some tasks
+
+# Use infinite loop for gameplay
+# Create the board 10x10 (big matrix: list of lists)
+# Create Robot class with x coord,y coord,name and code inside class constructor 
+# Add a method definition for __repr__
+# Place robot's code on the board in its x,y coordinate
+# Print the board to screen
+# Clean screen with: clear = os.system('clear')
+# Give moving capabilities to robots
+# Create an abstraction for the table width and height 
+    (global variables instead of using 10 each time)
+# Stop robots from falling off board
+- Add a local git repository
+- Add a remote github repository
+- Add support for user input and execute user's commands with eval()
+- Create a class RobotCollector that inherits from Robot and has the ability to
+pick up things and put them inside its chest
