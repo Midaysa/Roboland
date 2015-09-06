@@ -1,4 +1,6 @@
 import pprint, os
+
+
 WIDTH = 10
 HEIGHT = 10
 
@@ -50,10 +52,12 @@ def place(robot, board):
     
 def update_board(board, robot_list):
     """ Update robots positions """
+    # clear every board's position
     for x in range(WIDTH):
         for y in range(HEIGHT):
             board[x][y] = 0
             
+    # place every robot on the board
     for robot in robot_list:
         place(robot, board)
         
@@ -64,25 +68,8 @@ robot1 = Robot(1,1,"Mida",1)
 robot2 = Robot(1,2,"Piero",2)
 
 while True:
-    place(robot1, board)
-    place(robot2, board)
-    os.system('clear')
-    print robot1
-    print robot2
+    command = raw_input("Ingrese una accion: ")
+    eval(command)
+    robot_list = [robot1, robot2]
+    update_board(board,robot_list)
     print_board(board)
-    robot1.move("up")
-    robot2.move("up")
-    update_board(board, [robot1, robot2])
-    print robot1
-    print robot2
-    print_board(board)
-    robot1.move("up")
-    robot2.move("right")
-    update_board(board, [robot1, robot2])
-    print robot1
-    print robot2
-    print_board(board)
-    
-    
-    break    
-    

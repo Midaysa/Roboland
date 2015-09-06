@@ -11,8 +11,8 @@ Roboland is starting a production factory, we need robots to execute some tasks
 # Create an abstraction for the table width and height 
     (global variables instead of using 10 each time)
 # Stop robots from falling off board
-- Add a local git repository
-- Add a remote github repository
-- Add support for user input and execute user's commands with eval()
+# Add a local git repository
+# Add a remote github repository
+# Add support for user input and execute user's commands with eval()
 - Create a class RobotCollector that inherits from Robot and has the ability to
 pick up things and put them inside its chest
